@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
+  "imports": {
+    "#config/*": "./src/config/*",
+    "#controllers/*": "./src/controllers/*",
+    "#models/*": "./src/models/*",
+    "#routes/*": "./src/routes/*",
+    "#services/*": "./src/services/*",
+    "#utils/*": "./src/utils/*",
+    "#middleware/*": "./src/middleware/*",
+    "#validations/*": "./src/validation/*"
+  },
   "scripts": {
     "dev": "node --watch src/index.js",
     "lint": "eslint",
@@ -26,10 +36,20 @@
   "homepage": "https://github.com/prasanthvijaya/acquisitions#readme",
   "description": "",
   "dependencies": {
+    "@arcjet/inspect": "^1.5.0",
+    "@arcjet/node": "^1.5.0",
     "@neondatabase/serverless": "^1.2.0",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "dotenv": "^18.0.8",
     "drizzle-orm": "^0.45.4",
-    "express": "^5.3.0"
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.12.1",
+    "winston": "^3.19.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
