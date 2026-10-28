@@ -1,2 +1,5 @@
 node_modules
+.neon_local/
 .env.*
+!.env.development.example
+!.env.production.example
